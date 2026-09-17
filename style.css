@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 25px auto;
+    padding: 25px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+}
+
+.container div{
+    place-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.container div>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: 0.5s;
+}
+
+.container div:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
